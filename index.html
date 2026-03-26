@@ -6,64 +6,118 @@
   <title>Gaurav Sankhla | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
     <div class="container">
-      <img src= "C:\Users\Gaurav Sankhla\Downloads\msg2013534703-1703.jpg" alt="Gaurav Sankhla" class="profile-img" />
+      <img src="images/profile.jpg" alt="Gaurav Sankhla" class="profile-img" />
+
       <h1>Gaurav Sankhla</h1>
-      <p>Python and C/C++ Enthusiast | Web & Android Developer</p>
-      <button id="theme-toggle">Toggle Theme</button>
+      <p>Data Analyst | Power BI • SQL • Python</p>
+
+
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/gaurav-sankhla-654a9424b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/GauravSankhla007" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/gaurav-sankhla-654a9424b/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/GauravSankhla007" target="_blank">GitHub</a>
         <a href="mailto:sankhlagaurav86@gmail.com">Email</a>
       </div>
-      
     </div>
   </header>
 
+  <!-- MAIN -->
   <main class="container">
+
+    <!-- ABOUT -->
     <section>
       <h2>About Me</h2>
       <p>
-        A versatile coder passionate about crafting effective solutions and contributing to innovative projects.
+        I am a data enthusiast with a strong foundation in Python, SQL, and data visualization.
+        I enjoy building dashboards, analyzing datasets, and creating impactful insights.
+        I also have experience in backend development and database management using PostgreSQL.
       </p>
     </section>
 
+    <!-- PROJECTS -->
     <section>
       <h2>Projects</h2>
       <div class="projects">
-        
 
-        
+        <div class="project">
+          <h3>Data Jobs Dashboard</h3>
+          <p>
+            Built an interactive Power BI dashboard analyzing 400,000+ job records to uncover salary trends,
+            job demand, and role-based insights.
+          </p>
+          <p><strong>Tech:</strong> Power BI, Python</p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>HeyFit – Fitness Platform</h3>
+          <p>
+            Developed a full-stack fitness platform connecting users with events and professionals.
+            Designed a serverless PostgreSQL database using Neon and wrote optimized SQL queries.
+          </p>
+          <p><strong>Tech:</strong> React, Node.js, PostgreSQL (Neon), SQL</p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Sales Performance Dashboard</h3>
+          <p>
+            Created a dynamic Excel dashboard using Pivot Tables and charts to analyze sales performance.
+          </p>
+          <p><strong>Tech:</strong> Excel</p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Netflix Content Analysis</h3>
+          <p>
+            Performed exploratory data analysis on Netflix data to identify trends in genres and content distribution.
+          </p>
+          <p><strong>Tech:</strong> Python, Pandas, Matplotlib</p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Blackjack Game</h3>
+          <p>
+            Developed a console-based Blackjack game in Python using object-oriented programming concepts.
+          </p>
+          <p><strong>Tech:</strong> Python</p>
+          <a href="#">View Project</a>
+        </div>
 
         <div class="project">
           <h3>Tracking App</h3>
-          <p>IMDb-like app for tracking games, books, movies, and TV shows using Flutter.</p>
-          <a href="#">View Project</a> <!-- TODO -->
+          <p>
+            Built an IMDb-like app using Flutter to track movies, games, books, and TV shows.
+          </p>
+          <p><strong>Tech:</strong> Flutter</p>
+          <a href="#">View Project</a>
         </div>
-        
-        <div class="project">
-            <h3>Blackjack</h3>
-            <p>Developed a console-based Blackjack game in Python using OOP, implementing game logic and player/dealer interactions.</p>
-            <a href="#">View Project</a> <!-- TODO -->
-          </div>
-          
-          <div class="project">
-            <h3>HeyFit!</h3>
-            <p>HeyFit is a web-based fitness platform designed to connect users with local and virtual fitness events, professionals, and personalized wellness tracking. It aims to promote healthy lifestyles by providing an interactive and accessible environment for fitness enthusiasts of all levels.</p>
-            <a href="#">View Project</a> <!-- TODO -->
-          </div>
-  
-       
+
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Gaurav Sankhla</p>
+    <p>© 2026 Gaurav Sankhla</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- SCRIPT -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+
 </body>
 </html>
