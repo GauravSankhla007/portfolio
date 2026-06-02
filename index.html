@@ -1,122 +1,362 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Gaurav Sankhla | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container">
-      <img src="images/msg2013534703-1703.jpg" alt="Gaurav Sankhla" class="profile-img" />
+  <!-- NAVBAR -->
 
-      <h1>Gaurav Sankhla</h1>
-      <p>Data Analyst | Power BI • SQL • Python</p>
+  <nav class="navbar">
+    <div class="logo">GS</div>
 
+```
+<ul class="nav-links">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/gaurav-sankhla-654a9424b/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/GauravSankhla007" target="_blank">GitHub</a>
-        <a href="mailto:sankhlagaurav86@gmail.com">Email</a>
-      </div>
-    </div>
+<button id="theme-toggle">🌙</button>
+```
+
+  </nav>
+
+  <!-- HERO -->
+
+  <header class="hero">
+    <div class="container hero-content">
+
+```
+  <img src="images/msg2013534703-1703.jpg"
+       alt="Gaurav Sankhla"
+       class="profile-img"/>
+
+  <h1>Gaurav Sankhla</h1>
+
+  <p class="hero-text">
+    Data Analyst & Python Developer focused on building dashboards,
+    analyzing data, and developing practical applications.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="resume.pdf" class="btn primary-btn" download>
+      Download Resume
+    </a>
+
+    <a href="#projects" class="btn secondary-btn">
+      View Projects
+    </a>
+  </div>
+
+  <div class="social-links">
+    <a href="https://github.com/GauravSankhla007" target="_blank">
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/gaurav-sankhla-654a9424b/" target="_blank">
+      LinkedIn
+    </a>
+
+    <a href="mailto:sankhlagaurav86@gmail.com">
+      Email
+    </a>
+  </div>
+
+</div>
+```
+
   </header>
 
   <!-- MAIN -->
+
   <main class="container">
 
-    <!-- ABOUT -->
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a data enthusiast with a strong foundation in Python, SQL, and data visualization.
-        I enjoy building dashboards, analyzing datasets, and creating impactful insights.
-        I also have experience in backend development and database management using PostgreSQL.
-      </p>
-    </section>
+```
+<!-- ABOUT -->
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
-      <div class="projects">
+<section id="about" class="section">
+  <h2>About Me</h2>
 
-        <div class="project">
-          <h3>Data Jobs Dashboard</h3>
-          <p>
-            Built an interactive Power BI dashboard analyzing 400,000+ job records to uncover salary trends,
-            job demand, and role-based insights.
-          </p>
-          <p><strong>Tech:</strong> Power BI</p>
-          <a href="https://github.com/GauravSankhla007/data-jobs-dashboard-powerbi">View Project</a>
-        </div>
+  <p>
+    I am a Data Analyst and Python developer with experience in SQL,
+    Power BI, Excel, PostgreSQL, and Python.
+  </p>
 
-        <div class="project">
-          <h3>HeyFit – Fitness Platform</h3>
-          <p>
-            Developed a full-stack fitness platform connecting users with events and professionals.
-            Designed a serverless PostgreSQL database using Neon and wrote optimized SQL queries.
-          </p>
-          <p><strong>Tech:</strong> React, Node.js, PostgreSQL (Neon), SQL</p>
-          <a href="https://hey-fit.vercel.app/">View Project</a>
-        </div>
+  <p>
+    I enjoy working on real-world projects involving dashboards,
+    exploratory data analysis, backend systems, and automation.
+  </p>
 
-        <div class="project">
-          <h3>Sales Performance Dashboard</h3>
-          <p>
-            Created a dynamic Excel dashboard using Pivot Tables and charts to analyze sales performance.
-          </p>
-          <p><strong>Tech:</strong> Excel</p>
-          <a href="https://github.com/GauravSankhla007/Interactive-Sales-Analytics-Dashboard-Excel-/tree/main">View Project</a>
-        </div>
+  <p>
+    Alongside analytics, I also build Flutter and web applications,
+    giving me a strong understanding of both development and data workflows.
+  </p>
+</section>
 
-        <div class="project">
-          <h3>Netflix Content Analysis</h3>
-          <p>
-            Performed exploratory data analysis on Netflix data to identify trends in genres and content distribution.
-          </p>
-          <p><strong>Tech:</strong> Python, Pandas, Matplotlib</p>
-          <a href="https://github.com/GauravSankhla007/Netflix-data-analysis-Python-">View Project</a>
-        </div>
+<!-- SKILLS -->
 
-        <div class="project">
-          <h3>Blackjack Game</h3>
-          <p>
-            Developed a console-based Blackjack game in Python using object-oriented programming concepts.
-          </p>
-          <p><strong>Tech:</strong> Python</p>
-          <a href="https://github.com/GauravSankhla007/Blackjack/tree/main">View Project</a>
-        </div>
+<section id="skills" class="section">
+  <h2>Skills</h2>
 
-        <div class="project">
-          <h3>Tracking App</h3>
-          <p>
-            Built an IMDb-like app using Flutter to track movies, games, books, and TV shows.
-          </p>
-          <p><strong>Tech:</strong> Flutter</p>
-          <a href="#">View Project</a>
-        </div>
+  <div class="skills-container">
+
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>PostgreSQL</span>
+    <span>Pandas</span>
+    <span>Matplotlib</span>
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>Flutter</span>
+    <span>React</span>
+    <span>Node.js</span>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+
+    <div class="project-card">
+
+      <div class="project-content">
+
+        <h3>Data Jobs Dashboard</h3>
+
+        <ul>
+          <li>Analyzed 400K+ job records</li>
+          <li>Built interactive salary dashboards</li>
+          <li>Identified hiring & salary trends</li>
+        </ul>
+
+        <p class="tech-stack">
+          Power BI
+        </p>
+
+        <a href="https://github.com/GauravSankhla007/data-jobs-dashboard-powerbi"
+           target="_blank"
+           class="project-link">
+          View Project →
+        </a>
 
       </div>
-    </section>
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div class="project-card">
+
+      <div class="project-content">
+
+        <h3>HeyFit – Fitness Platform</h3>
+
+        <ul>
+          <li>Built a full-stack fitness platform</li>
+          <li>Designed PostgreSQL database using Neon</li>
+          <li>Created optimized SQL queries</li>
+        </ul>
+
+        <p class="tech-stack">
+          React • Node.js • PostgreSQL
+        </p>
+
+        <a href="https://hey-fit.vercel.app/"
+           target="_blank"
+           class="project-link">
+          Live Demo →
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+
+    <div class="project-card">
+
+      <div class="project-content">
+
+        <h3>Sales Analytics Dashboard</h3>
+
+        <ul>
+          <li>Built interactive Excel dashboard</li>
+          <li>Used Pivot Tables & charts</li>
+          <li>Analyzed sales performance trends</li>
+        </ul>
+
+        <p class="tech-stack">
+          Excel
+        </p>
+
+        <a href="https://github.com/GauravSankhla007/Interactive-Sales-Analytics-Dashboard-Excel-/tree/main"
+           target="_blank"
+           class="project-link">
+          View Project →
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+
+    <div class="project-card">
+
+      <div class="project-content">
+
+        <h3>Netflix Content Analysis</h3>
+
+        <ul>
+          <li>Performed exploratory data analysis</li>
+          <li>Analyzed genres & content trends</li>
+          <li>Created visualizations using Python</li>
+        </ul>
+
+        <p class="tech-stack">
+          Python • Pandas • Matplotlib
+        </p>
+
+        <a href="https://github.com/GauravSankhla007/Netflix-data-analysis-Python-"
+           target="_blank"
+           class="project-link">
+          View Project →
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+
+    <div class="project-card">
+
+      <div class="project-content">
+
+        <h3>Blackjack Game</h3>
+
+        <ul>
+          <li>Built using object-oriented programming</li>
+          <li>Implemented game logic & card system</li>
+          <li>Created modular Python classes</li>
+        </ul>
+
+        <p class="tech-stack">
+          Python
+        </p>
+
+        <a href="https://github.com/GauravSankhla007/Blackjack/tree/main"
+           target="_blank"
+           class="project-link">
+          View Project →
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PROJECT 6 -->
+
+    <div class="project-card">
+
+      <div class="project-content">
+
+        <h3>Tracking App</h3>
+
+        <ul>
+          <li>Built IMDb-style tracking application</li>
+          <li>Track movies, games, books & TV shows</li>
+          <li>Developed using Flutter</li>
+        </ul>
+
+        <p class="tech-stack">
+          Flutter
+        </p>
+
+        <a href="https://github.com/GauravSankhla007"
+           target="_blank"
+           class="project-link">
+          GitHub →
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <p>
+    Interested in internships, collaborations, or opportunities?
+  </p>
+
+  <div class="contact-links">
+
+    <a href="mailto:sankhlagaurav86@gmail.com">
+      Email
+    </a>
+
+    <a href="https://github.com/GauravSankhla007"
+       target="_blank">
+      GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/gaurav-sankhla-654a9424b/"
+       target="_blank">
+      LinkedIn
+    </a>
+
+  </div>
+</section>
+```
 
   </main>
 
   <!-- FOOTER -->
+
   <footer>
     <p>© 2026 Gaurav Sankhla</p>
   </footer>
 
   <!-- SCRIPT -->
+
   <script>
+
     const toggleBtn = document.getElementById("theme-toggle");
 
     toggleBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
+
+      document.body.classList.toggle("light-mode");
+
+      if(document.body.classList.contains("light-mode")) {
+        toggleBtn.textContent = "☀️";
+      } else {
+        toggleBtn.textContent = "🌙";
+      }
+
     });
+
   </script>
 
 </body>
